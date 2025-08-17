@@ -248,6 +248,32 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 # Securing and Scaling the Data Pipeline
 
 ## Cloud security review
+**Shared responsability model:**
+- AWS: Hardware, Software, Networks, Facilities
+- Consumer: Aplications connected to AWS, Implementations
+
+**Principles:**
+- Strong identity foundation (IAM)
+- Traceability
+- All layers
+- Automate security
+- Protect data
+- Keep people away from data
+- Prepare for security events
+
+**AWS IAM**
+- Access policies for users and groups
+- Granular permisssions
+- Information assurance with logs
+
+**AWS KMS**
+- criptoraphic keys
+- usage policies for users
+
+**Logging**: Collection of event metadata
+
+**Monitoring**: Verification of security and performance
+- Cloudwatch: logging, governance, auditing and compliance
 
 ## Security of analytics workloads
 
