@@ -62,8 +62,6 @@ table tr:nth-child(odd) {
 }
 
 
-
-
 </style>
 
 
@@ -114,11 +112,21 @@ flowchart LR
 Building a data pipeline is an iterative process. You start with a hypothesis:"this data will answer the business need" and see where it takes you and if you need to improve/expand it.
 
 
-
 ## The role of the data engineer in data-driven organizations
+|           |Engineer                        | Scientist                     |  
+|-----------|--------------------------------|-------------------------------|
+| Main role | Getting data into the pipeline | Getting value out of the data |
+| Focus     | Infrastructure                 | Data in the pipeline          |
+
+
 
 ## Modern data strategies
-
+- Modernize: Move to cloud, Purpose-Built tools, independent components
+  - more agility, less hardware setup
+- Unify: silos to datalake, democratize access, visualization tools for users, data governance
+  - single source of truth
+- Innovate: Proactive decision-making, incorporate AI
+  - use ai to get new insights
 
 
 # The elements of data
@@ -182,6 +190,9 @@ Bad data < Limited data < Good data
 - Transformation: 
 
 # Design Principles and Patterns for Data Pipelines
+
+## AWS Well-Architected Framework and Lenses
+
 
 
 # Securing and Scaling the Data Pipeline
