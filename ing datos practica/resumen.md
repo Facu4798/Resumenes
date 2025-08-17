@@ -107,10 +107,36 @@ comment for the copilot: this is a summary of the data engineering course from a
 
 ## Veracity and value
 
+Bad data < Limited data < Good data
+
+**Veracity in the pipeline:**
+- Source: discover validity
+    - Deleted information, Missing, Lack of lineage, Inconsistent, Bias
+- Ingestion: Clean data
+    - Duplicates, anomalies
+- Storage: Prevent unwanted changes. Assure consistency
+    - sofware bugs, human error, tampering
+- Processing and analysis: Preserve data quality
 
 
 
 
+# Design Principles and Patterns for Data Pipelines
 
 
+# Securing and Scaling the Data Pipeline
+
+# Ingesting and Preparing Data
+
+# Ingesting by Batch or by Stream
+
+# Storing and Organizing Data
+
+# Processing Big Data
+
+# Processing Data for ML
+
+# Analyzing and Visualizing Data
+
+# Automating the Pipeline
 
