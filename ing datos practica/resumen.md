@@ -245,8 +245,20 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 - Downstream: S3, Redshift
 
 
-
 # Securing and Scaling the Data Pipeline
+
+## Cloud security review
+
+## Security of analytics workloads
+
+## ML security
+
+## Scaling: An overview 
+
+## Creating a scalable infrastructure
+
+## Creating scalable components
+
 
 # Ingesting and Preparing Data
 
