@@ -51,6 +51,19 @@ h6 {
 
 comment for the copilot: this is a summary of the data engineering course from aws 
 
+
+# Data driven organizations
+
+## Data driven decisions
+
+## The data pipeline – infrastructure for data-driven decisions
+
+## The role of the data engineer in data-driven organizations
+
+## Modern data strategies
+
+
+
 # The elements of data
 
 ## The 5 Vs of data
@@ -77,8 +90,9 @@ comment for the copilot: this is a summary of the data engineering course from a
 - Processing: How much data should be processed and how quickly to address a business problem
 - Visualization: How much data users need and how frequently it should be updated
 
-## Variety - Data types
+## Variety
 
+**Data types:**
 - Structured: (SQL database)
     - well defined schema. Easy to query. Not flexible. Hot(ready to analyze)
 - Semi-structured: (JSON, XML, Parquet, CSV)
@@ -86,7 +100,14 @@ comment for the copilot: this is a summary of the data engineering course from a
 - Unstructured: (Text, images, audio, video)
     - No schema. Hard to query. Flexible.
 
-##
+**Data sources:**
+- On premises databases: Controlled by organization, structured data, sensitive
+- Public datasets: Unnecessary, semistructured, transformation and joins required
+- IoT devices: Streaming, realtime ingestion and processing
+
+## Veracity and value
+
+
 
 
 
