@@ -248,9 +248,9 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 # Securing and Scaling the Data Pipeline
 
 ## Cloud security review
-**Shared responsability model:**
+**Shared responsibility model:**
 - AWS: Hardware, Software, Networks, Facilities
-- Consumer: Aplications connected to AWS, Implementations
+- Consumer: Applications connected to AWS, Implementations
 
 **Principles:**
 - Strong identity foundation (IAM)
@@ -263,11 +263,11 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 
 **AWS IAM**
 - Access policies for users and groups
-- Granular permisssions
+- Granular permissions
 - Information assurance with logs
 
 **AWS KMS**
-- criptoraphic keys
+- cryptographic keys
 - usage policies for users
 
 **Logging**: Collection of event metadata
