@@ -276,8 +276,27 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 - Cloudwatch: logging, governance, auditing and compliance
 
 ## Security of analytics workloads
+**Classify and protect data**
+- Understand data classifications and policies
+- Identify source data owners
+- Record data classifications into catalog
+- Implement data encryption
+- Implement data retention policies
+
+**Control data access**
+- Allow data owners to determine access
+- Build user identity solutions
+- Implement data access authorization models
+- Emergency access policies
+
+**Control the access to workloads infrastructure**
+- Prevent unintended access
+- Least privilege
+- Monitor infrastructure changes and user activity
+- Secure infrastructure audit logs
 
 ## ML security
+
 
 ## Scaling: An overview 
 
