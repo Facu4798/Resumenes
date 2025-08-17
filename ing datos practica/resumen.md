@@ -111,6 +111,9 @@ flowchart LR
     D -->E
 ```
 
+Building a data pipeline is an iterative process. You start with a hypothesis:"this data will answer the business need" and see where it takes you and if you need to improve/expand it.
+
+
 
 ## The role of the data engineer in data-driven organizations
 
