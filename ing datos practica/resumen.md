@@ -297,6 +297,25 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 
 ## ML security
 
+**Protect data across the ML Lifecycle**
+- Identify business goal
+  - Validate privacy of ML software and libraries
+- Frame the ML problem
+  - Least privilege
+- Collect, Preprocess, FE
+  - Secure modeling environment 
+  - Protect PII (encryption, access)
+  - Data lineage
+  - Keep only relevant data
+- Training and evaluation
+  - Centrally managed notebook
+  - Prevent data injections
+  - Detect anomalies
+- Deployment
+  - Protect against malicious activities
+- Monitoring
+  - Monitor human interaction
+  - Restrict access to the model
 
 ## Scaling: An overview 
 
