@@ -192,6 +192,20 @@ Bad data < Limited data < Good data
 # Design Principles and Patterns for Data Pipelines
 
 ## AWS Well-Architected Framework and Lenses
+**Pillars**
+- Operational excellence
+- Security
+- Reliability
+- Performance efficiency
+- Cost optimization
+- Sustainability
+
+## The evolution of data architectures
+Mainframe -> Client-Server -> Internet 3-Tier -> Cloud based microservices
+
+Storage: SQL Database -> NoSQL Database -> DataLake -> Purpose-Built Store
+Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
+
 
 
 
