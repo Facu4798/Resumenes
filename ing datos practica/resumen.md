@@ -57,7 +57,7 @@ table th {
 
 table tr:nth-child(even) {
   background-color: #202429ff;
-  text-align: center;
+  text-align: center; 
 }
 
 table tr:nth-child(odd) {
@@ -334,7 +334,9 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 **AWS Auto Scaling:** automatic, predictive scaling for  workloads, with scaling plans and continuous performance monitoring (CloudWatch)
 
 **Scaling and cost management**
-- Identify
+- Identify performance goals
+- Allow components to scale individually
+- Use metrics to find bottlenecks 
 
 
 
