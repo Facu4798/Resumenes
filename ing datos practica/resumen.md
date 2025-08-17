@@ -36,7 +36,37 @@ h6 {
   font-size: 0.85em;
   color: #57606a;
 }
+
+
+/* Alternating row colors for markdown tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+table th, table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #f6f8fa;
+  text-align: center;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+
+
+
 </style>
+
+
 
 
 
@@ -55,8 +85,32 @@ comment for the copilot: this is a summary of the data engineering course from a
 # Data driven organizations
 
 ## Data driven decisions
+**Techniques:**
+- Data analytics: Analyze datasets to find patterns and trends in structured data
+- AI: Mathematical models that use examples of unstructured data to make predictions
+
+More valuable insights are more difficult to derive
+$$\text{descriptive}>\text{diagnostic}>\text{predictive}>\text{prescriptive}$$
+
+More data $+$ Fewer barriers $=$ More opportunity for data driven decisions
+
+Data becomes less valuable over time. High value data if you can analyze it real time.
 
 ## The data pipeline – infrastructure for data-driven decisions
+
+| data | $\Rightarrow$ | insights |
+|------|---------------|----------|
+| collect|store and process | insights|
+
+```mermaid
+flowchart LR
+    A(Source) --> B(Ingestion)
+    B --> C(Processing)
+    B --> D(Storage)
+    C --> E(Analytics)
+    D -->E
+```
+
 
 ## The role of the data engineer in data-driven organizations
 
