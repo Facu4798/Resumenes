@@ -61,6 +61,10 @@ table tr:nth-child(odd) {
   text-align: center;
 }
 
+body {
+  background-color: ##24292e;
+}
+
 
 </style>
 
@@ -210,7 +214,7 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 ## Modern data architecture on AWS
 
 - Store data in a centralized location available for all consumers
-- One source of truth (data lakte) and multiple SORs
+- One source of truth (data lake) and multiple SORs
   - Seamless data movement
   - Scalable data lake
   - Unified governance
@@ -318,6 +322,17 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
   - Restrict access to the model
 
 ## Scaling: An overview 
+
+|Horizontal | Vertical|
+|-|-|
+| add more nodes or computers| add more resources to each computer (e.g. RAM)|
+
+**AWS Auto Scaling:** automatic, predictive scaling for  workloads, with scaling plans and continuous performance monitoring (CloudWatch)
+
+**Scaling and cost management**
+- Identify
+
+
 
 ## Creating a scalable infrastructure
 
