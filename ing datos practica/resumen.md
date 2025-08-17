@@ -201,11 +201,48 @@ Bad data < Limited data < Good data
 - Sustainability
 
 ## The evolution of data architectures
-Mainframe -> Client-Server -> Internet 3-Tier -> Cloud based microservices
+Server: Mainframe -> Client-Server -> Internet 3-Tier -> Cloud based microservices
 
 Storage: SQL Database -> NoSQL Database -> DataLake -> Purpose-Built Store
+
 Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 
+## Modern data architecture on AWS
+
+- Store data in a centralized location available for all consumers
+- One source of truth (data lakte) and multiple SORs
+  - Seamless data movement
+  - Scalable data lake
+  - Unified governance
+
+<p align="center">
+  <img src="image.png" alt="alt text">
+</p>
+
+## Modern data architecture pipeline
+
+### Ingestion and storage
+**Ingestion**
+- Purpose built AWS services to match source types connectivity and velocity
+
+**Storage**
+- Storage (S3, Redshift)
+- Catalog (Lake Formation, AWS Glue Data Catalog)
+
+### Processing and consumption
+**Processing**
+- Transform data into a consumable state (redshift -> sql, glue & emr -> big data, kinesys -> stream)
+- Each component reads and writes to storage
+
+**Consumption**
+- Sagemaker AI, Quicksight BI, Athena SQL
+
+## Streaming analytics pipeline
+- Ingestion and producers: CloudWatch
+- Stream storage: Kinesis Streams
+- Stream processing: Kinesis Analytics
+- Visualization: Opensearch
+- Downstream: S3, Redshift
 
 
 
