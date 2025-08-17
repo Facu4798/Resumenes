@@ -51,18 +51,22 @@ table th, table td {
   text-align: center;
 }
 
+table th {
+  background-color: #202429ff;
+}
+
 table tr:nth-child(even) {
-  background-color: #f6f8fa;
+  background-color: #202429ff;
   text-align: center;
 }
 
 table tr:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #2b3136ff;
   text-align: center;
 }
 
 body {
-  background-color: ##24292e;
+  background-color: #24292e;
 }
 
 
