@@ -115,11 +115,14 @@ Bad data < Limited data < Good data
 - Ingestion: Clean data
     - Duplicates, anomalies
 - Storage: Prevent unwanted changes. Assure consistency
-    - sofware bugs, human error, tampering
+    - software bugs, human error, tampering
 - Processing and analysis: Preserve data quality
 
-
-
+**Best practices**
+- Cleaning: Define clean, Trace errors, Don't make assumptions, Retain auditable data 
+- Ingestion: Make data formats match across sources
+- Storage: Don't save aggregated data. (traceability,flexibility,auditing)
+- Transformation: 
 
 # Design Principles and Patterns for Data Pipelines
 
