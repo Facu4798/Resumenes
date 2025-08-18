@@ -370,8 +370,10 @@ ELT: Source -> data lake -> Transform for analytics
 - Transformations apply historically  
 
 ## Data wrangling introduction
-
-
+**Data wrangling:** Transforming large amounts of raw data from different sources and schemas into a meaningful set of data.
+<p align="center">
+  <img src="image-1.png" alt="alt text">
+</p>
 
 ## Data discovery
 
