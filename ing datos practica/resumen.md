@@ -357,8 +357,21 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 # Ingesting and Preparing Data
 
 ## ETL and ELT comparison
+ETL: Source -> match destination -> load
+- Better for structured data
+- Filter sensitive data and not store it
+- Stored data is ready for analysis => faster complex queries
+
+
+ELT: Source -> data lake -> Transform for analytics
+- For structured or unstructured data
+- Faster ingestion
+- Ad hoc analysis
+- Transformations apply historically  
 
 ## Data wrangling introduction
+
+
 
 ## Data discovery
 
