@@ -338,11 +338,22 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 - Allow components to scale individually
 - Use metrics to find bottlenecks 
 
-
-
 ## Creating a scalable infrastructure
 
-## Creating scalable components
+**Infrastructure as Code (IaC)**
+- Automatic infrastructure changes declaratively or programmatically
+- Reliability and rigor
+
+|Declarative (what)| Imperative (what and how)|
+|-|-|
+|Defines resources and configurations|Defines step by step instructions|
+|Defines system state| Focuses on the desired end state|
+
+**AWS CloudFormation**
+- Changes resources in stacks(set of resources)
+- Automates resource management and provisioning
+
+
 
 
 # Ingesting and Preparing Data
