@@ -354,9 +354,23 @@ Processing: OLAP vs OLTP -> Big Data -> Lambda architecture and streaming
 - Automates resource management and provisioning
 
 
-
-
 # Ingesting and Preparing Data
+
+## ETL and ELT comparison
+
+## Data wrangling introduction
+
+## Data discovery
+
+## Data structuring
+
+## Data cleaning
+
+## Data enriching
+
+## Data validating
+
+## Data publishing
 
 # Ingesting by Batch or by Stream
 
