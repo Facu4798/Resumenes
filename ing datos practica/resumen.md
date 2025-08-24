@@ -376,6 +376,13 @@ ELT: Source -> data lake -> Transform for analytics
 </p>
 
 ## Data discovery
+Iterative process
+
+Find sources, query and analyze to see if they have value for the business.
+$$value > effort$$
+
+identify: formats, desired range, relationships, access policies
+
 
 ## Data structuring
 
