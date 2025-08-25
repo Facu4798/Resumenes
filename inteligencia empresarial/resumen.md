@@ -215,4 +215,116 @@ Los datos requeridos primero son obtenidos (extracted) desde las fuentes, y lueg
 
 # Clase 2
 
+## proposito del bi
+**definición**: Conjunto de procesos y herramientas orientadas al análisis de información con 
+el objetivo de hacer uso de datos reales en el proceso de toma de decisiones
+- **alcence estrategico**: informacion confiable para planificación
+- **objetivo principal**: datos dispersos -> conocimiento util
+
+**BI como ventaja competitiva:**
+- Identificación de tendencias de mercado
+- Mejora en la relación con los clientes
+- Optimización de procesos internos
+
+| BI operativo | BI estrategico |
+|----|-----|
+|Reportes diarios, monitoreo de procesos internos| Análisis para visión a largo plazo|
+
+
+## Arquitectura
+
+### Arquitecturas clasicas vs modernas
+
+**On Premise**(Costos mas altos, Alto control)
+- Costos de infra
+- Menejo de infra y seguridasd depende de la empresa
+- Uso intensivo de recursos
+- Local
+
+**Cloud**(Costos mas bajos, Menos control)
+- Baja inversion inicial
+- Mantenimiento y updates a cargo del provedoor
+- Bajo control de infra
+- Global y escalable
+
+**Hardware outsourcing**
+
+**Hibridas**
+
+## Big Data
+Surge de necesidades de negocio e innovaciones tecnologicas
+
+**definición:**: Volumen masivo de datos variados muy grandes y difíciles de procesar con las 
+bases de datos y el software tradicionales.
+
+**Las 5 Vs**:
+- Volumen: Muchos datos
+- Velocidad: generación y procesamiento rapido
+- Variedad: Distintos formatos y tipos
+- Veracidad: datos de calidad 
+- Valor: datos utiles para la organización.
+
+**Data Lakes:** fepositorio central para almacenar muchos datos crudos en varios formatos
+- Pros: Almacenamiento cost-effective, escalabilidad, esquema flexible
+- Cons: Desafíos de gobierno de datos, issues de calidad de datos
+- **Si es:** gestion de datos flexible, con autoservicio, que soporta whatifs y desechables y promueve la culñtura del retry.
+- **No es:** Un reemplazo del DWH o ODS, ni con performance transacional ni analitico.
+
+
+<div style="text-align: center;">
+  <img src="image-10.png" alt="alt text" />
+  <img src="image-11.png" alt="alt text" />
+</div>
+
+**Usos del data lake**
+- Staging: para carga al DWH
+- Datos historicos: dado el bajo costo y capacidad para consultas grandes.
+- Integración con datos externos: Igual que staging pero con datos externos (suplementing data)
+
+
+## Asistencia a la toma de decisiones
+|Tipos de decisiones |Rol del BI |
+|-----|------|
+|Estrategicas: largo plazo| definir planes de crecimiento, ROI |
+|Tacticas: mediano plazo. ajuste de estrategia|Seguimiento de areas especificas|
+|Operativas: dia a dia| monitoreo y optimizacion NRT |
+
+
+
+## KPIs
+
+**Métricas:** medidas cuantitativas y cualitativas para cuantificar el rendimiento/progreso
+- tomar decisiones informadas
+- evaluar efectividad
+- establecer objetivos
+
+**KPI(key performance indicator):**  medida del rendimiento de un proceso (%). relacionado con un objetivo 
+- Reflejar estado actual y alineación y ajuste con estrategia
+- Identificar areas con problemas
+- Es importante establecer:
+  - Niveles de rendimiento aceptables que sean expuestos por las métricas
+  - Método de los informes, la forma, la frecuencia y distribución 
+
+**Tipos de KPI**
+- estrategico: cuota de mercado, clientes
+- financieros: rentabilidad, utilidad
+- tacticos: cantidad de ordenes, clientes satisfechos
+- operativos: tiempos de entrega, eficiencia, nivel de servicio
+
+## Objetivos smart (framework)
+- Specific: dirigidos al area especifica
+- Measurable: datos completos y precisos para medirlos
+- Achievable: realistas
+- Relevant: medir solo lo necesario para comprender el estado
+- Time bound: los resultados deben estar disponibles cuando se necesiten. deben tener marco temporal
+
+## Balanced scorecard
+- método para medir el desempeño organizacional de manera integral.
+- Herramienta (tableros) que permite convertir misión y visión en KPIs de actuación.
+- Perspectivas:
+  - Financiera: rentabilidad
+  - Clientes: Satisfacción
+  - Procesos internos: eficiencia y calidad
+  - Aprendizaje y crecimiento: Capacitación, innovación
+  - Cultura organizacional
 

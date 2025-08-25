@@ -406,7 +406,10 @@ Merge/Combine data from different SORs
 - Aggregations: min, max, avg
 
 ## Data validating
+Check that data has the veracity i need
 
+- Audit:
+- Fixing: 
 
 
 ## Data publishing
