@@ -385,6 +385,10 @@ identify: formats, desired range, relationships, access policies
 
 
 ## Data structuring
+- Organize storage and partitions
+- Parse source files 
+- Match/map source to target fields
+- Split merge or compress files
 
 ## Data cleaning
 
