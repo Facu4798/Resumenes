@@ -267,7 +267,7 @@ bases de datos y el software tradicionales.
 **Data Lakes:** fepositorio central para almacenar muchos datos crudos en varios formatos
 - Pros: Almacenamiento cost-effective, escalabilidad, esquema flexible
 - Cons: Desafíos de gobierno de datos, issues de calidad de datos
-- **Si es:** gestion de datos flexible, con autoservicio, que soporta whatifs y desechables y promueve la culñtura del retry.
+- **Si es:** gestion de datos flexible, con autoservicio, que soporta whatifs(escenarios) y desechables y promueve la culñtura del retry.
 - **No es:** Un reemplazo del DWH o ODS, ni con performance transacional ni analitico.
 
 
