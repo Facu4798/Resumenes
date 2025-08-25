@@ -391,10 +391,23 @@ identify: formats, desired range, relationships, access policies
 - Split merge or compress files
 
 ## Data cleaning
+Is done per source based on the characteristics of the source
+
+- Remove unwanted values, columns, duplicates
+- Fill missing data
+- Validate types
+- Identify and fix outliers
 
 ## Data enriching
+Merge/Combine data from different SORs
+
+- Merge: Combine clean data from different sources into a dataset 
+- Suplement: Add public data to own data
+- Aggregations: min, max, avg
 
 ## Data validating
+
+
 
 ## Data publishing
 
