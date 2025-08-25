@@ -281,6 +281,7 @@ bases de datos y el software tradicionales.
 - Datos historicos: dado el bajo costo y capacidad para consultas grandes.
 - Integración con datos externos: Igual que staging pero con datos externos (suplementing data)
 
+- **Datos maestros** Datos core como nombres de clientes
 
 ## Asistencia a la toma de decisiones
 |Tipos de decisiones |Rol del BI |
