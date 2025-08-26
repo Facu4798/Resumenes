@@ -407,12 +407,24 @@ Merge/Combine data from different SORs
 
 ## Data validating
 Check that data has the veracity i need
+- Audit: consistency, metadata, pii
+- Fixing: adress audit findings
 
-- Audit:
-- Fixing: 
+The data engineer might focus on tasks that validate the accuracy of any automated structuring, cleaning, or enriching activities. 
+
+Validating tasks might overlap with cleaning tasks
 
 
 ## Data publishing
+make the dataset available for use within the pipeline
+- move data to permanent storage
+- make data aviable to consumers
+
+During publishing, you apply your structuring decisions. You need to write data to the appropriate folders or partitions, and apply the file management techniques that you decided on
+
+
+
+
 
 # Ingesting by Batch or by Stream
 
@@ -425,4 +437,3 @@ Check that data has the veracity i need
 # Analyzing and Visualizing Data
 
 # Automating the Pipeline
-
