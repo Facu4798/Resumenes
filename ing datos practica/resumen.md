@@ -423,10 +423,24 @@ make the dataset available for use within the pipeline
 During publishing, you apply your structuring decisions. You need to write data to the appropriate folders or partitions, and apply the file management techniques that you decided on
 
 
-
-
-
 # Ingesting by Batch or by Stream
+
+## Comparing batch and stream ingestion
+
+## Batch ingestion processing
+
+## Purpose-built ingestion tools
+
+## AWS Glue for batch ingestion processing
+
+## Scaling considerations for batch processing
+
+## Services for stream processing
+
+## Scaling considerations for stream processing
+
+## Ingesting IoT data by stream
+
 
 # Storing and Organizing Data
 
