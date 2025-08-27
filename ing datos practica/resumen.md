@@ -426,6 +426,8 @@ During publishing, you apply your structuring decisions. You need to write data 
 # Ingesting by Batch or by Stream
 
 ## Comparing batch and stream ingestion
+- Batch: Batch sized jobs on demand, schedule, event
+- Streaming: Continuous, sliding window processing, real time analysis
 
 ## Batch ingestion processing
 
