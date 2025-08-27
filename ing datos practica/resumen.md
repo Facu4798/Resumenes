@@ -430,6 +430,19 @@ During publishing, you apply your structuring decisions. You need to write data 
 - Streaming: Continuous, sliding window processing, real time analysis
 
 ## Batch ingestion processing
+batch job: schedule or trigger to run a set of elt scripts for a batch use case
+
+Orchestration in key: shared resources, timing
+
+Batch pipelines should contain:
+
+|Ease of use |Data volume and variety|Orchestration and monitoring|Scaling and cost management|
+|------------|-----------------------|----------------------------|---------------------------|
+| flexible   | volume                | workflow                   | scaling                   |
+|low/no code | sources and targets   | bookmarking                |pay as you go              |
+|serverless  | formats               | logging                    |                           |
+
+
 
 ## Purpose-built ingestion tools
 
