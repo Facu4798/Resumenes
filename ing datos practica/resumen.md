@@ -443,8 +443,30 @@ Batch pipelines should contain:
 |serverless  | formats               | logging                    |                           |
 
 
-
 ## Purpose-built ingestion tools
+
+**Amazon AppFlow(SaaS apps)**
+- connector with filters
+- map, transform and validate
+- transfer to S3 and redshift
+
+**AWS DMS (relational DB)**
+- connect to source and format for sink}
+- source filters and mappings
+- data validation
+- write to AWS data store
+- Continuous replication task
+
+**AWS DataSync(file systems/file shares)**
+- apply filters to transfer a subset of files
+- use variety of sources and targets
+- secure transfer between self managed storage and AWS
+
+**AWS DataExchange**
+- Find and subscribe to sources
+- Preview before subscribing
+- Copy datasets to S3
+- Recieve notifications on updates
 
 ## AWS Glue for batch ingestion processing
 
