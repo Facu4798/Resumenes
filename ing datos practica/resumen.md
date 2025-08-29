@@ -469,6 +469,32 @@ Batch pipelines should contain:
 - Recieve notifications on updates
 
 ## AWS Glue for batch ingestion processing
+Integration service for ETL automatic ingestion and transformation and movement
+
+**Automatically generate schema**
+- Aws glue crawlers derive schemas from data store and populates data catalog
+- AWS S3, redshift, RDS, dynamo DB
+
+**Catalog**
+
+**AWS glue studio for ETL**
+- Write scripts and run jobs
+- on demand, schedule, event
+- pull data
+- configure transformation
+- set target or sink and view schema
+
+**Serverless processing with spark**
+- runtime engine
+**orchestrate with workflows**
+- multi job and multi crawler
+- on demand, schedule, event triggers
+
+**monitor**
+- status of jobs
+- job bookmarks (checkpoint)
+- debugging
+- spark ui
 
 ## Scaling considerations for batch processing
 
