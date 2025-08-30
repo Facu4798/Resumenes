@@ -547,6 +547,19 @@ read from stream:
 
 
 ## Ingesting IoT data by stream
+**pub/sub**
+$$\text{publishers} \Rightarrow \text{broker}\Rightarrow \text{subscribers}$$
+
+| AWS IoT Core                     | AWS IoT Analytics             |
+|----------------------------------|-------------------------------|
+| Connect to devices, even offline | simplifies the steps for IoT pipeline for unstructured data|
+| Data transformation              | Data transformations               |
+| Route data to AWS services       | Time series data store for analysis|
+
+**rules engine**
+- applies defined rules to data in a topic
+- SQL filter and transform
+
 
 
 # Storing and Organizing Data
