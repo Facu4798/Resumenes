@@ -511,6 +511,22 @@ Take into account
 
 ## Services for stream processing
 
+**Amazon kinesis**
+- Captures gigabytes of data 
+- in parallel, different sources
+
+**Kinesis firehose**
+- storage for further use
+
+**Kinesis data analytics**
+- transformations
+
+**AWS kinesis producer library(kpl)**
+- for creating event capture aplications
+
+**Apache Flink**
+- streaming transformations
+
 ## Scaling considerations for stream processing
 
 ## Ingesting IoT data by stream
