@@ -497,6 +497,17 @@ Integration service for ETL automatic ingestion and transformation and movement
 - spark ui
 
 ## Scaling considerations for batch processing
+Batch goals: timing, accuracy, budget (balance and trade-off)
+
+Fix steps:
+- bottlenecks
+- capacity issue
+
+Take into account
+- Size
+- Variety
+- Transformations
+
 
 ## Services for stream processing
 
