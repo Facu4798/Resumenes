@@ -528,6 +528,23 @@ Take into account
 - streaming transformations
 
 ## Scaling considerations for stream processing
+Throughput: make sure record is processed before temp storage expires
+- increase temp storage time
+- increase compute speed
+
+take into account:
+- consumer velocity requirements
+- volume
+
+write to stream capacity:
+- ammount of shards
+- capacity or on-demand
+
+read from stream:
+- scale trhoughput
+- shared capacity
+- enhanced(dedicated) capacity
+
 
 ## Ingesting IoT data by stream
 
