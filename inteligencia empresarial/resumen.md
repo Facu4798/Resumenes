@@ -329,3 +329,101 @@ bases de datos y el software tradicionales.
   - Aprendizaje y crecimiento: Capacitación, innovación
   - Cultura organizacional
 
+
+# Clase 3
+
+## BAM (bussiness activity monitoring)
+
+**definicion:** monitoreo en tiempo real de actividades, operaciones y procesos 
+clave del negocio
+
+**proposito:** identificar eventos criticos al instante para reaccionar
+
+*nota: se combina coin BPM historico*
+
+**beneficios**
+- Causa raiz $\Rightarrow$ reaccion en tiempo real
+- Adaptacion rapida
+- Solucionar cuellos de botellas
+- Visibilidad continua de KPIs y SLAs
+- Reducción de costos
+
+
+## BPM (bussiness process management)
+**definición:** Disciplina que modela, automatiza y optimiza procesos de negocio
+
+**Propósito:** alinear procesos con la estrategia y mejorar continuamente. + Eficiencia - Costos
+
+**Ciclo de vida**
+1. Diseñar (hitos, tareas, responsables)
+2. Modelar (visualmente, con detalle)
+3. Ejecutar/Implementar (POC primero)
+4. Monitorear
+5. Optimizar
+
+**Beneficios**
+- Procesos más escalables, con una mejor ejecución de procesos y automatización del flujo de trabajo
+- Mayor transparencia, por la automatización de procesos, se definen claramente a los dueños de las tareas a lo largo del proceso
+- Menos dependencia de los equipos de desarrollo. Low code solutions
+
+## BI, BAM & BPM
+BAMcombina tanto la recolección de datos y la visualización de BI como la fortaleza analítica de BPM para crear un enfoque holístico de todas las actividades comerciales.
+
+BPMpermite a los líderes construir sobre el trabajo de BI al analizar grandes cantidades de datos recopilados de diversas fuentes.
+
+## Balanced scorecard
+
+**definicion:** metodo para medir el desempeño organizacional de manera integral
+- Herramienta para convertir misión y visión en objetivos y KPIs con retroalimentación
+- Perspectivas:
+  - Financiera: rentabilidad, reducción de costos.
+  - Clientes: satisfacción, fidelización
+  - Procesos internos: eficiencia, calidad
+  - Aprendizaje y crecimiento: capacitación, innovación, cultura organizacional
+
+![alt text](image-12.png)
+
+**beneficios**
+- Sistema de gestion que transforma estrategia $\Rightarrow$ KPIs
+- Alinear los objetivos de toda la organización
+- Permitir comunicar fácilmente la visión y la estrategia
+- Priorizar los procesos más decisivos
+ • Identificar ldonde se deben alocar mas recursos
+ • Medir el impacto de las decisiones estratégicas
+
+
+## dashboards
+**definicion:** Interfaces visuales que resumen KPIs y datos globales, de areas o proyectos
+- Personalizables a cada area
+- Flexibles
+
+**porposito:** ofrecer una visión global de los datos de forma resumida NRT para decisiones
+
+**Tipos:**
+- Estratégicos: visión general
+- Tácticos: áreas específicas
+- Operativos: NRT procesos diarios  
+
+Características de un buen dashboard
+- Claridad y jerarquía visual
+- Interactividad
+- Elección del gráfico más adecuado
+- Filtros
+- Actualización automática
+
+## Herramientas
+**Tradicionales:** SAP bussiness objects, Oracle BI, Strategy, IBM Cognos
+
+**Modernas(Self Service y Nube):** Power BI, Tableau, Qlik Sense, Google Looker studio
+- Integración con data lakes y big data tools
+- IA y ML
+- Visualizacion interactiva en multiples dispositivos
+- Automatización
+
+![alt text](image-13.png)
+
+
+
+
+
+
