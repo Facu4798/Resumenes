@@ -85,3 +85,8 @@ DE: collecting, processing, and managing data to support analytics and business 
 Lifecycle: ingestion, transformation, storage, and load
 
 
+# Class 2
+
+# Class 3
+
+# Class 4

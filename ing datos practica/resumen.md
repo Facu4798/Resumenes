@@ -561,8 +561,19 @@ $$\text{publishers} \Rightarrow \text{broker}\Rightarrow \text{subscribers}$$
 - SQL filter and transform
 
 
-
 # Storing and Organizing Data
+
+## Storage in the modern data architecture
+
+## Data lake storage
+
+## Data warehouse storage
+
+## Purpose-built databases
+
+## Storage in support of the pipeline
+
+## Securing storage
 
 # Processing Big Data
 
