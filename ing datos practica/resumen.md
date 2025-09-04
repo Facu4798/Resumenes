@@ -564,6 +564,13 @@ $$\text{publishers} \Rightarrow \text{broker}\Rightarrow \text{subscribers}$$
 # Storing and Organizing Data
 
 ## Storage in the modern data architecture
+Storage is at the centre of the architecture
+
+Types:
+**Block:**
+**Object:** all types, scalable,low cost (S3)
+**File:**
+<img width="1303" height="575" alt="image" src="https://github.com/user-attachments/assets/ad6b0d29-7024-47cb-b02f-7f0c7f0d3fc9" />
 
 ## Data lake storage
 
