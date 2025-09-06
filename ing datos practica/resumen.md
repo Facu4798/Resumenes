@@ -567,12 +567,25 @@ $$\text{publishers} \Rightarrow \text{broker}\Rightarrow \text{subscribers}$$
 Storage is at the centre of the architecture
 
 Types:
-**Block:**
+**Block:** dedicated, low latency (EBS)
 **Object:** all types, scalable,low cost (S3)
-**File:**
+**File:** store as file (EFS)
 <img width="1303" height="575" alt="image" src="https://github.com/user-attachments/assets/ad6b0d29-7024-47cb-b02f-7f0c7f0d3fc9" />
 
 ## Data lake storage
+Store data *"as is"*
+
+**S3:**
+- transform and query data in place
+- read at object level
+- tiers: intelligent(unknown),standard(frequent),infrequent & onezone(less frequent),glacier (archive)
+**LakeFormation**
+  - simplifies the processes to create manage and secure DL
+  - interoperable with AWS
+  - transform data
+  - storage optimization
+  - governed tables: ACID tables with metadata
+  
 
 ## Data warehouse storage
 
