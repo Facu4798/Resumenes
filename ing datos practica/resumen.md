@@ -604,7 +604,17 @@ Store data *"as is"*
 - Spectrum: can query combining datalake and datawarehouse
 
 ## Purpose-built databases
+**Factors in choosing:**
+- Workload type: oltp vs olap
+- Shape: update frequency, access method
+- Performance: speed and volume
+- Operations burden: disastery recovery, backups
 
+**Types**
+- Relational: Aurora, RDS, Redshift
+- Key Value: DynamoDB
+- Document: DocumentDB
+- Graph: Neptune
 ## Storage in support of the pipeline
 
 ## Securing storage
