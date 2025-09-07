@@ -579,6 +579,7 @@ Store data *"as is"*
 - transform and query data in place
 - read at object level
 - tiers: intelligent(unknown),standard(frequent),infrequent & onezone(less frequent),glacier (archive)
+
 **LakeFormation**
   - simplifies the processes to create manage and secure DL
   - interoperable with AWS
@@ -588,6 +589,19 @@ Store data *"as is"*
   
 
 ## Data warehouse storage
+**DWH:** 
+- Centralized data repository for structured and semistructured.
+- frontend + analytics engine + database server (fast + object)
+- multiple databases
+- data organized in schemas.tables
+
+**AWS Redshift**
+- fully managed datawarehouse
+- Compute resources(RSHT engine): nodes = leader + workers
+  - DC2 low latency high throughput
+  - RA3 scalable storage and compute separately
+  - DS2 low cost hdd for > 500GB
+- Spectrum: can query combining datalake and datawarehouse
 
 ## Purpose-built databases
 
