@@ -422,6 +422,72 @@ Características de un buen dashboard
 
 ![alt text](image-13.png)
 
+# Clase 4
+
+## Diseño dimensional
+- Modelos de datos tradicionales (entidad-relación, 3NF) terminan 
+siendo muy complejos y difíciles de ser entendidos por los 
+usuarios finales
+- Joins de múltiples tablas, frecuentemente grandes, son lentos y 
+consumen muchos recursos del sistema para consultas
+
+Surgen modelos orientados a OLAP, no OLTP
+
+**Caracteristicas**
+- Predecible
+- Facil de administrar
+- Facil de entender (para it y bussines)
+
+**Cubos N-dimensionales**
+- se querea con slicing.
+- basicamente un tensor
+
+## Dimensiones
+- Punto de entrada del modelo
+- Indican las distintas formas que tenemos para de ver la información almacenada en un hecho. Le dan contexto
+- Contienen atributos/campos descriptivos
+- Contienen una clave única asignada en el ETL (surrogate key)
+- Tienden a ser discretas y a menudo jerárquicas
+
+**Conformed dimensions**
+Dimensión que tiene el mismo significado en cada fact table en la que está interviniendo
+
+**Conformed facts**
+Métricas que pueden aparecer en distintos data marts. Misma unidad de medida y nombre a menos que no sean comparables (si no tienen el mismo significado)
+
+**Granularidad de un hecho**
+Nivel de detalle en el que encontrará la información almacenada de un hecho en una fact table
+
+
+## Tablas de hechos
+- Tabla central
+- Contiene metricas que reoresentan *"los numeros de la empresa"*
+- contiene atributos FK
+- Cada conjunto de hechos esta basado en la interseccion de cada combinacion de los atributos dimensionales(granularidad del hecho)
+
+**Tipos de hechos**
+- Aditivos: Se suman en todas las dimensiones
+- SemiAditivos: se pueden sumar en algunas dimesniones pero no en todas (!= dimension tiempo)
+- No aditivos: no se pueden sumar en ninguna dimensión (porcentajes)
+
+## Star Schema
+- Unica tabla por dimension
+- Desnormalización al menor nivel de detalle de cada dimension
+- Facil de entender
+- Minimiza los joins
+
+## Snow Flake
+- Una o mas tabas por dimension
+- Totalmente normalizado -> se separan las tablas de baja cardinalidad
+- Mas joins posibles (si la consulta se va al outer rim)
+
+| Star | Snowflake|
+|------|----------|
+|Pocos joins|Mayor complejidad de consultas|
+|Acceso rapido|Menos performance|
+|Redundancia|Espacio optimo|
+|Facil de entender| No recomendable para DWH|
+
 
 
 
