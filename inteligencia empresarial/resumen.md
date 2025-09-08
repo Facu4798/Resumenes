@@ -465,6 +465,12 @@ Nivel de detalle en el que encontrará la información almacenada de un hecho en
 - contiene atributos FK
 - Cada conjunto de hechos esta basado en la interseccion de cada combinacion de los atributos dimensionales(granularidad del hecho)
 
+**Tipos de tablas de hechos**
+- Transaccional (ventas,pedidos)
+- Snapshot (saldos, stock)
+- Factless solo tiene FKs (Eventos, difusión)
+- Agregaciones
+
 **Tipos de hechos**
 - Aditivos: Se suman en todas las dimensiones
 - SemiAditivos: se pueden sumar en algunas dimesniones pero no en todas (!= dimension tiempo)
@@ -488,6 +494,33 @@ Nivel de detalle en el que encontrará la información almacenada de un hecho en
 |Redundancia|Espacio optimo|
 |Facil de entender| No recomendable para DWH|
 
+## Slowly changed dimensions
+- Tipo 1: Nos se registra el cambio (overwrite)
+- Tipo 2: Append con nueva surrogate key
+- Tipo 3: Un nuevo campo por cada hecho historico para esa PK
+
+## Degenerate dimensions
+Cuando se quiere almacenar los números de los documentos de las transacciones que se encuentran en el hecho y no tiene sentido tenerlos en una dimensión
+- evitamos la creación de una dimensión con gran cantidad de registros
+
+## Junk dimensions
+Cuando en el sistema operacional existen campos tipo flag o texto junto con los campos que se utilizarán para asociar la transacción a la dimensión
+- Estos campos deberían ser agrupados con algún criterio, generando una dimensión con los distintos valores que pueden tomar los campos de las distintas agrupaciones
+
+## Agregaciones
+Sumarizaciones de otros hechos realizadas con anterioridad al momento de la consulta para acelerar la performance
+- segun biz o distribucion de los datos
+- se hace durante o despues del etl de forma total o incremental
+
+**implicancias**
+- DBA: mas espacio, mas tareas de mantenimiento
+- ETL: agrega tiempo de computo y carga. requiere sincronizacion entre datos detallados y agregados
+- OLAP y reportes: ver como herramientas manejan las agregaciones
+
+**Diseño de agregaciones**
+- Se generan nuevas tablas agregadas
+- Nuevas tablas dimensionales (mas chicas relacionadas a la agg table)
+- Manejo de agregaciones (reportes/dbms). El usuario solo debe saber que existe la tabla de mayor detalle
 
 
 
