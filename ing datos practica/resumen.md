@@ -618,6 +618,16 @@ Store data *"as is"*
 ## Storage in support of the pipeline
 
 ## Securing storage
+- Built in S3 security
+- Resource and user level permissions
+- Tags for roles and permissions
+- CloudFormation for automated policy deployment
+- Encryption
+
+**Redshift database security**
+- distinct from service security
+- third party auditing for compliance
+- integration with aws monitoring and security services
 
 # Processing Big Data
 
