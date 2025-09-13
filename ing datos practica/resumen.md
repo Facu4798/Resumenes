@@ -651,6 +651,36 @@ Main node + workers
 - reduces number of steps
 - no recomputes
 
+# AWS EMR
+Managed cluster platform
+- simplified running spark or hadoop
+- move data
+- elastic
+- hdfs and S3 for storage
+- cluster: main manager, core run tasks and store results, task nodes only do tasks
+- same layers as hadoop
+
+## Managing your EMR clusters
+types of cluster launch:
+- interactive: emr console
+- command line: aws cli
+- api: emr api
+
+**long running clusters**
+- persistent
+- large datasets
+- persistent data
+
+**transient clusters**
+- shut down after data is processed
+- dont save data on hdfs
+
+connections are linked to main node with designed security policies. EMR designs security policies to core and task nodes. Uses private keys.
+
+Scaling: managed by emr or designated scaling policies
+
+## Apache Hudi
+
 # Processing Data for ML
 
 # Analyzing and Visualizing Data
