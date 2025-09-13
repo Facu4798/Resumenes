@@ -680,6 +680,22 @@ connections are linked to main node with designed security policies. EMR designs
 Scaling: managed by emr or designated scaling policies
 
 ## Apache Hudi
+simpliify incremental data processing
+- record level cdc
+- hudi datasets (acid)
+
+**copy on write**
+stores a parquet for each update. default
+**merge on read**
+combination of parquet and avro. updates logged to delta files
+
+**views**
+read optimzed: latest commited and compacted
+incremental: change stream
+real time: latest commited data in columnar and avro
+
+
+
 
 # Processing Data for ML
 
