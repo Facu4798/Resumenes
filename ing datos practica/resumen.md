@@ -631,6 +631,26 @@ Store data *"as is"*
 
 # Processing Big Data
 
+## Apache hadoop
+Distributed processing and storage framework
+- HDFS: hadoop distributed file system
+  - name node manages distributed data nodes with data blocks as persisted data
+- YARN: Yet another resource negotiator
+  - Coordinates resources for data processing
+  - scheduler: assigns resources
+  - application manager: accepts jobs
+  - node manager: manages resources on a node   
+- Map reduce
+  - map function to data and apply reduce transformation in partitions
+- Hadoop common
+
+Main node + workers
+
+# Apache spark
+- in memory caching
+- reduces number of steps
+- no recomputes
+
 # Processing Data for ML
 
 # Analyzing and Visualizing Data
