@@ -715,8 +715,9 @@ real time: latest commited data in columnar and avro
   - data source
 
 ## Comparing AWS tools and services
-
-## Selecting tools for a gaming analytics use case
+**Athena**:serverless ad hoc queries
+**QuickSight**: visualizations from combined data sources. NLP questions with QuickSightQ.
+**OpenSearch**:log analyitics,application monitoring, clickstream analysis
 
 
 # Analyzing and Visualizing Data
