@@ -724,6 +724,7 @@ real time: latest commited data in columnar and avro
 
 ## Automating infrastructure deployment
 
+
 ## CI/CD
 
 ## Automating with Step Functions
