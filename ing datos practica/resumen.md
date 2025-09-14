@@ -696,9 +696,35 @@ real time: latest commited data in columnar and avro
 
 
 
-
 # Processing Data for ML
 
+## Considering factors that influence tool selection
+- bussines needs
+  - analysis type
+  - insights needed
+  - visualization type
+  - dashboard vs report
+  - granularity
+- Data characteristics
+  - five Vs
+  - streaming or historical
+  - structured or unstructured
+  - display type
+- access to data
+  - who and how is accesed
+  - data source
+
+## Comparing AWS tools and services
+
+## Selecting tools for a gaming analytics use case
+
+
 # Analyzing and Visualizing Data
+
+## Automating infrastructure deployment
+
+## CI/CD
+
+## Automating with Step Functions
 
 # Automating the Pipeline
