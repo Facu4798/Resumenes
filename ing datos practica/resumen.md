@@ -698,6 +698,12 @@ real time: latest commited data in columnar and avro
 
 # Processing Data for ML
 
+-----------------------------------------------
+
+
+# Analyzing and Visualizing Data
+
+
 ## Considering factors that influence tool selection
 - bussines needs
   - analysis type
@@ -720,13 +726,30 @@ real time: latest commited data in columnar and avro
 **OpenSearch**:log analyitics,application monitoring, clickstream analysis
 
 
-# Analyzing and Visualizing Data
 
-## Automating infrastructure deployment
-
-
-## CI/CD
-
-## Automating with Step Functions
 
 # Automating the Pipeline
+
+## Automating infrastructure deployment
+Modern deployment: IaC = upon outage, an identical server is launched and configured
+benefits:
+- repeatability
+- reusability (dev = prod)
+
+## CI/CD
+CI: merge continuously
+CD: automatic test and release
+CICD requires testing
+
+Sometimes there is manual intervention between QA and PROD
+
+## Automating with Step Functions
+CICD drag and drop visual pipeline editor. 
+- Coordinates easily the components of the application
+- logs steps and retrys
+- integration with athena for starting and stopping queries
+
+**state types**
+<img width="807" height="388" alt="image" src="https://github.com/user-attachments/assets/3ba0d7e2-47ad-40cf-b019-4934c7400a4d" />
+
+
