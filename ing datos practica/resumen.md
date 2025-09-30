@@ -750,6 +750,7 @@ CICD drag and drop visual pipeline editor.
 - integration with athena for starting and stopping queries
 
 **state types**
+
 <img width="807" height="388" alt="image" src="https://github.com/user-attachments/assets/3ba0d7e2-47ad-40cf-b019-4934c7400a4d" />
 
 
