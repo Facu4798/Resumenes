@@ -90,3 +90,65 @@ Lifecycle: ingestion, transformation, storage, and load
 # Class 3
 
 # Class 4
+
+# Class 5
+
+# Class 6
+
+# Class 7
+
+# Class 8: Silver & Gold layers
+Single source of truth:
+- sanidad de datos: no se que tengo en la capa de bronce
+
+Limpia valida y enriquece los datos crudos
+
+delta lake engine hace que la capa de silver funcione.
+- transacciones acidas
+
+Problemas de los datos crudos:
+- data invalida: incompatible con el tipo de dato
+- data no uniforme: datos no uniformer entre fuentes
+- data duplicada:
+  - cdc genera duplicados. sobre todo cuando no se guarda el timestamp
+ 
+ssot:
+- unification
+- reliable
+- consumption readiness
+
+Standarization:
+- casing, etc
+
+Enrichment:
+- data unificada
+
+data preparada para agregación en capa de oro
+
+validación => consistencia
+
+## consumición de la capa de plata (oro)
+
+seguridad:
+- riesgos: no ecriptar
+
+capa de oro: agregaciones
+
+colaboración entre cliente e ingeniero de datos
+
+agregaciones:
+- bussiness reuirements
+- data dependencies
+- agreggation logic with sql or spark
+
+la capa de oro se guarda como vistas materializadas
+
+- consumidores diversos
+- se debe hacer segun la arquitectura
+
+se consume de plata y de oro
+- silver: uso intermedio y analytics
+- gold: bussiness ready optimized for reporting
+
+problemas con la arquitectura medallion:
+-
