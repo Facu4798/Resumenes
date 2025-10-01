@@ -152,3 +152,7 @@ se consume de plata y de oro
 
 problemas con la arquitectura medallion:
 -
+
+
+separar almacenamiento de computo es adherirse a las estrategias de finops
+modular hace resiliente y evita vendor lock-in
