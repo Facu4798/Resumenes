@@ -19,4 +19,15 @@
 - **Función objetivo: Expresión matemática de Z**
 - **Variables de decisión: Definición, tipo (Continuas, Enteras, Binarias) y que representan en la realidad**
 
+**Restricciones y lógica de negocio:**
+- **Restricciones "duras" (Hard constraints): Ecuaciones clave que limitan la región factible (ej. capacidad, balance)**
+- **Manejo de Infactibilidad: ¿Cómo responde el modelo si no existe solución posible con los recursos dados?**
 
+**Analisis de sensibilidad y robustez:**
+- **Análisis post-óptimo: Interpretación de precios sombra (duales) o análisis de rangos si aplica**
+- **Escenarios: ¿Que parámetros clave variaron para probar la robustez?**
+
+**Arquitectura del prototipo (deployment):**
+- **Stack tecnológico: librería de modelado utilizada (pyomo, pulp.+, or-tools) y solver seleccionado (CBC,gurobi,GLPK)**
+- **Interfaz de usuario: Tipo de implementación (Streamlit, API, Notebook Interactivo)**
+- **Flujo de la solución: Input $\rightarrow$ Solver $\rightarrow$ Output accionable que les correspondería** 
