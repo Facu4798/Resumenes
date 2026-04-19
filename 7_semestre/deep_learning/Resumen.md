@@ -15,8 +15,9 @@ body {
 
 /* ── H1 ── */
 h1 {
+  text-align: center;
   font-family: 'Orbitron', monospace;
-  font-size: 2rem;
+  font-size: 48px;
   font-weight: 900;
   color: #66fcf1;
   text-transform: uppercase;
@@ -32,15 +33,19 @@ h1::after {
   display: block;
   position: absolute;
   bottom: -2px; left: 0;
-  width: 60px; height: 2px;
+  width: 80vw; height: 2px;
   background: #66fcf1;
-  box-shadow: 0 0 8px #66fcf1, 0 0 18px #66fcf199;
-  animation: scan 3s ease-in-out infinite;
+  box-shadow: 0 0 2px #66fcf1, 0 0 18px #66fcf199;
 }
-@keyframes scan {
-  0%   { width: 60px;  opacity: 1; }
-  50%  { width: 140px; opacity: 0.6; }
-  100% { width: 60px;  opacity: 1; }
+
+h1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 105%; left: 0;
+  width: 80vw; height: 2px;
+  background: #66fcf1;
+  box-shadow: 0 0 2px #66fcf1, 0 0 18px #66fcf199;
 }
 
 /* ── H2 ── */
@@ -100,61 +105,33 @@ h4 {
 
 /* ── OL ── */
 ol {
-  list-style: none;
-  counter-reset: neon-counter;
-  padding: 0;
+  padding-left: 1.6rem;
   margin: 0.8rem 0 1rem;
 }
 ol li {
-  counter-increment: neon-counter;
-  display: flex; align-items: flex-start; gap: 12px;
-  margin-bottom: 8px;
-  padding: 8px 12px;
-  border: 1px solid #1f2833;
-  border-radius: 6px;
-  background: #0d1117;
-  transition: border-color 0.2s, background 0.2s;
+  margin-bottom: 6px;
+  padding-left: 6px;
+  color: #c5c6c7;
 }
-ol li:hover {
-  border-color: #66fcf133;
-  background: #111820;
-}
-ol li::before {
-  content: counter(neon-counter, decimal-leading-zero);
+ol li::marker {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #66fcf1;
-  background: #0b2d2b;
-  border: 1px solid #66fcf133;
-  border-radius: 4px;
-  padding: 1px 6px;
-  min-width: 32px;
-  text-align: center;
-  flex-shrink: 0;
-  margin-top: 1px;
   text-shadow: 0 0 6px #66fcf188;
 }
 
-/* ── UL ── */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0.8rem 0 1rem;
+/* nested ol */
+ol ol {
+  margin: 4px 0 4px;
 }
-ul li {
-  display: flex; align-items: flex-start; gap: 10px;
-  margin-bottom: 6px;
-  padding: 6px 0;
+ol ol li::marker {
+  color: #45a29e;
 }
-ul li::before {
-  content: '◆';
-  color: #c678dd;
-  font-size: 0.55rem;
-  flex-shrink: 0;
-  margin-top: 6px;
-  text-shadow: 0 0 6px #c678ddaa;
+ol ol ol li::marker {
+  color: #1f6b68;
 }
+
 
 /* ── TABLE ── */
 table {
@@ -197,4 +174,6 @@ tbody tr:nth-child(even) td { background: #0a0e18; }
 
 ### efejfrhkjl
 
-1. efejkfjhk
+# hello
+
+
