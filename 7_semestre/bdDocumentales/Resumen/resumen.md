@@ -421,3 +421,43 @@ Redis opera completamente en RAM, lo que lo hace mucho más que un caché simple
 - **Counting Semaphores:** A diferencia de locks binarios (bloqueado/libre), los semáforos restringen el acceso concurrente a un número exacto de operaciones simultáneas (ej: máximo 5 requests de API concurrentes por usuario).
 - **Sharded Structures:** Redis usa representaciones compactas en RAM (ziplists, intsets). Fragmentar datos en miles de Hashes pequeños en vez de un Hash masivo reduce drásticamente el footprint de memoria.
 - **Rich Data Types:** Listas, Sets, Hashes y Sorted Sets (ZSETs) nativos en memoria permiten computar analytics complejos a velocidades sub-milisegundo.
+
+
+<p style="font-size: 30px; text-align: center; font-weight: bold;">Clase 6</p>
+
+# Indices
+
+**Ventajas:** Lectura rápida, ordenamiento y rangos matematicos eficiente, consultas optimizadas.
+
+**Desventajas:** Escrituras más lentas, mayor uso de espacio en disco, mantenimiento adicional. En indices de arbol B+ cada nodo ocupa espacio adicional y requiere actualizaciones en cada escritura. hacer demasiados indices puede saturar el cluster. 
+
+> MongoDB mantiene un limite de 64 indices por colección
+
+# Diagnostico
+
+Añadir `explain("executionStats")` a cualquier consulta para obtener un desglose detallado de cómo se ejecutó, incluyendo:
+- Índice utilizado (o falta de índice)
+- Número de documentos examinados vs devueltos
+- Etapas del plan de ejecución (COLLSCAN, IXSCAN, FETCH, etc.)
+
+# Covered Queries
+Una consulta cubierta es aquella que puede ser respondida completamente utilizando solo los índices, sin necesidad de acceder a los documentos. Esto ocurre cuando:
+- Todos los campos requeridos por la consulta están incluidos en el índice.
+- El índice es lo suficientemente completo para satisfacer la consulta sin necesidad de leer los documentos.
+
+# Indices compuestos
+
+El orden de los campos en un índice compuesto es crucial. Regla ESR:
+1. **Equality**: Campos con igualdad (`$eq`) primero
+2. **Sort**: Campos usados para ordenar después
+3. **Range**: Campos con rangos (`$gt`, `$lt`) al final
+
+> si pongo el range antes que el sort, el motor hace un sort en memoria, lo que degrada el rendimiento, ya que MongoDB tiene un limite de 32MB para sorting en memoria. 
+
+# Optimizando el uso de RAM
+
+## Indices TTL(Time To Live)
+Cuando se sabe que los datos son temporales (ej: sesiones de usuario, logs), se puede configurar un índice TTL que automáticamente borra documentos después de un tiempo predefinido, liberando espacio en RAM y manteniendo el dataset manejable.
+
+## Indices parciales
+Se crea un indice que solo incluye documentos que cumplen una condición específica. Asi el arbol se mantiene pequeño y eficiente.
