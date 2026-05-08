@@ -461,3 +461,12 @@ Cuando se sabe que los datos son temporales (ej: sesiones de usuario, logs), se 
 
 ## Indices parciales
 Se crea un indice que solo incluye documentos que cumplen una condición específica. Asi el arbol se mantiene pequeño y eficiente.
+
+
+<p style="font-size: 30px; text-align: center; font-weight: bold;">Clase 7</p>
+
+# Query optimizer
+
+porque a mi me tarda y a mi compañero no?
+
+    a
